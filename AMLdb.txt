@@ -1,0 +1,199 @@
+Started by user Akhil Janardanan
+Building remotely on cdocm_build_slave in workspace /usr7/SIR07765/jenkins_workspace/workspace/CANARABANK9_0_DB
+Updating http://172.16.1.131:19080/svn/INTELLECT_CARDS/branches/Cards_CanaraBank_9.0/Source_Code/db
+At revision 74
+no change for http://172.16.1.131:19080/svn/INTELLECT_CARDS/branches/Cards_CanaraBank_9.0/Source_Code/db since the previous build
+[CANARABANK9_0_DB] $ /bin/sh -xe /var/tmp/hudson5643582683198735509.sh
+[CANARABANK9_0_DB] $ /bin/sh -xe /var/tmp/hudson312697332193100971.sh
+[CANARABANK9_0_DB] $ /bin/sh -xe /var/tmp/hudson6496020876366055837.sh
++ echo #Running cath/tables/ORBICATH_BUILD.sql 
+#Running cath/tables/ORBICATH_BUILD.sql
++ sqlplus ORBICATH/ORBICATH@CANAMC @./cath/tables/ORBICATH_BUILD.sql 
+
+SQL*Plus: Release 10.2.0.1.0 - Production on Mon Jul 29 12:47:22 2013
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 10g Enterprise Edition Release 10.2.0.3.0 - 64bit Production
+With the Partitioning and Data Mining options
+
+CREATE TABLE orbicath.tr310
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+ALTER TABLE TR851 ADD SWAP_OPTION VARCHAR2(1)
+                      *
+ERROR at line 1:
+ORA-01430: column being added already exists in table
+
+
+CREATE TABLE ORBICATH.BC401
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE ORBICATH.BC402
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE ORBICATH.BC403
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE ORBICATH.RTHSEQ MINVALUE 1
+                         *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE SEQUENCE ORBICATH.RTHSEQDUMMY MINVALUE 1
+                         *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE ORBICATH.EVENT_MST_MB
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE ORBICATH.EVENT_MSG_QUEUE
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+ALTER TABLE CDMST ADD EMBOSS_STATUS VARCHAR2(1)
+                      *
+ERROR at line 1:
+ORA-01430: column being added already exists in table
+
+
+CREATE TABLE ORBICATH.EVENT_CUST_MAP
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+CREATE TABLE ORBICATH.FW140
+                      *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+ALTER TABLE CDMST ADD CHECKER_ID VARCHAR2(10)
+                      *
+ERROR at line 1:
+ORA-01430: column being added already exists in table
+
+
+ALTER TABLE CDMST ADD CHECKER_DATE VARCHAR2(10)
+                      *
+ERROR at line 1:
+ORA-01430: column being added already exists in table
+
+
+ALTER TABLE DLQ_TBL ADD LIMIT_AMOUNT_PER NUMBER(7,4)
+                        *
+ERROR at line 1:
+ORA-01430: column being added already exists in table
+
+
+CREATE TABLE PCDMST
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Procedure created.
+
+drop synonym pdmst
+             *
+ERROR at line 1:
+ORA-01434: private synonym to be dropped does not exist
+
+
+create synonym pdmst for orbiafu.pdmst
+               *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+Table created.
+
+
+Sequence created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+DROP TABLE XCREDIT
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> Disconnected from Oracle Database 10g Enterprise Edition Release 10.2.0.3.0 - 64bit Production
+With the Partitioning and Data Mining options
+[CANARABANK9_0_DB] $ /bin/sh -xe /var/tmp/hudson8633012774509642329.sh
+[CANARABANK9_0_DB] $ /bin/sh -xe /var/tmp/hudson6680322385150512334.sh
+[CANARABANK9_0_DB] $ /bin/sh -xe /var/tmp/hudson5729167114400203196.sh
+Finished: SUCCESS
+
