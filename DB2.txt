@@ -1,3 +1,7 @@
+minions
+
+
+
 Started by user Vinoth Kumar Pandian
 Building remotely on CANARA_CM in workspace /usr3/SIR04356/jenkins_workspace/workspace/CANARABANK9_0_DB
 Updating http://172.16.1.131:19080/svn/INTELLECT_CARDS/branches/Cards_CanaraBank_9.0/Source_Code/db
